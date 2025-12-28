@@ -3,6 +3,7 @@
     justify-content: space-between;
     align-items: center;
     box-shadow: 3px 3px rgba(0, 0, 0, 0.062);
+    height: 10vh;
 
 }
 
@@ -19,8 +20,7 @@
         width: 60px;
         height: 60px;
         border-radius: 50%;
-        margin-right: 10px;
-        
+        margin: 10px;        
     }
 
     h3{
@@ -39,6 +39,8 @@
 
     li{
        list-style: none;
+       text-decoration: none;
+    
        margin-right: 70px;
     }
 
@@ -71,11 +73,15 @@
 
     .mobile-nav{
         display: block;
+        position: fixed;
+       bottom: 20px;
+        
         ul{
             display: flex;
             justify-content: space-around;
             text-align: center;
-            background-color: rgba(0, 0, 255, 0.115);
+            background-color: rgba(0, 0, 255, 0.1);
+            backdrop-filter: blur(10px);
             margin: 10px;
             padding: 5px;
             border-radius: 20px;
@@ -93,8 +99,11 @@
         color: blue;
     }
 
-     .mobile-nav li:active{
+     .mobile-nav li.active{
          background-color: blue;
         color: white;
+        aspect-ratio: 1 / 1;
+        
+
      }
 }

@@ -1,0 +1,147 @@
+.about{
+    padding: 10px;
+}
+
+.head{
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 17px;
+    h1{
+        padding-bottom: 20PX;
+    }
+}
+
+.abt-and-skill{
+    display: grid;
+   grid-template-columns: repeat(2, 1fr); 
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+   
+}
+
+.abt{
+    font-size: 17px;
+    line-height: 25px;
+    h2{
+        padding-bottom: 50px;
+    }
+
+    p{
+        width: 90%;
+    }
+}
+
+.skill{
+    text-align: center;
+    
+    h2{
+        padding-bottom: 40px;
+    }
+}
+
+.skill-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 20px;
+        margin: 0 auto;
+}
+
+.skill-card {
+    background-color: #7a7a7a;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2) ;
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    width: 150px;
+    margin: 10px;
+    padding: 20px;
+}
+
+.icon {
+font-size: 70px; 
+ margin-top: 10px;
+}
+
+
+@media (max-width: 1150px){
+ 
+    .head{
+        font-size: 18px;
+    }
+
+    
+.abt-and-skill{
+   grid-template-columns: repeat(1, 1fr); 
+}
+    .abt{
+        font-size: 17px;
+        padding: 0%;
+        width: 90%;
+        margin: 10px;
+        h2{
+            text-align: center;
+            font-size: 30px;
+        }
+        p{
+            width: 100%;
+        }
+           
+    } 
+
+     
+.skill{
+    margin-top: 50px;
+    padding: 0%;
+    width: 100%;
+} 
+
+ 
+ .skill-card {
+    font-size: 18px;
+   height: 20vh;
+   width: 18vw;
+} 
+
+
+.icn{
+    font-size: 70px;
+}
+
+}
+
+@media (max-width: 480px){
+   
+    .head{
+        font-size: 13px;
+        p{
+            font-size: 14px;
+        }
+    }
+
+    .abt-and-skill{
+        padding: 0%;
+    }
+
+    .abt{
+        font-size: 14px;
+        h2{
+            font-size: 25px;
+            padding-bottom: 20px;
+        }
+    }
+
+    
+.skill-grid {
+        grid-template-columns: repeat(2, 1fr); 
+}
+   
+ .skill-card {
+    font-size: 17px;
+   height: 15vh;
+   width: 37vw;
+} 
+}
+ 

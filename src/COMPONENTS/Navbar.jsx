@@ -1,6 +1,7 @@
 import './Navbar.css'
 import profile from "../assets/myprofile.jpg"
 import { IoCodeWorkingOutline, IoHomeOutline, IoMailOutline, IoPersonOutline } from 'react-icons/io5'
+import { Link } from 'react-router-dom'
 
 
 const Navbar = () => {
@@ -19,10 +20,11 @@ const Navbar = () => {
 
         <div className="menue">
             <ul>
-                <li>HOME</li>
-                <li>ABOUT</li>
-                <li>PROJECTS</li>
-                <li>CONTACT</li>
+                 <li><Link to='/' style={{textDecoration:"none", color:'black'}}>HOME</Link></li>
+                <li><Link to='/About' style={{textDecoration:"none", color:'black'}}>ABOUT</Link></li>
+                <li><Link to='/Projects' style={{textDecoration:"none", color:'black'}}>PROJECTS</Link></li>
+                <li><Link to='/Contact' style={{textDecoration:"none", color:'black'}}>CONTACT</Link></li>
+                
             </ul>
         </div>
     </div>
@@ -30,16 +32,16 @@ const Navbar = () => {
       {/* MONILE NAVBAR */}
         <div className="mobile-nav">
             <ul>
-                <li><IoHomeOutline size={24}/><br />
+                <li><Link to='/' style={{textDecoration:"none", color:'black'}}><IoHomeOutline size={24}/></Link><br />
                 <span>HOME</span>
                 </li>
-                <li><IoPersonOutline size={24}/>
+                <li><Link to='/About' style={{textDecoration:"none", color:'black'}}><IoPersonOutline size={24}/></Link>
                 <span>ABOUT</span>
                 </li>
-                <li><IoCodeWorkingOutline size={24}/>
+                <li><Link to='/Projects' style={{textDecoration:"none", color:'black'}}><IoCodeWorkingOutline size={24}/></Link>
                 <span>PROJECTS</span>
                 </li>
-                <li><IoMailOutline size={24}/>
+                <li><Link to='/Contact' style={{textDecoration:"none", color:'black'}}><IoMailOutline size={24}/></Link>
                 <span>CONTACT</span>
                 </li>
             </ul>
