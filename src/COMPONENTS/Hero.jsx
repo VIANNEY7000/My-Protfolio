@@ -1,4 +1,4 @@
-import profile from "../assets/myprofile.jpg"
+import profile from "../assets/myphoto.jpg"
 import './Hero.css'
 import {Button} from '@mui/material'
 
