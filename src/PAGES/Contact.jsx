@@ -19,6 +19,7 @@ const Contanct = () => {
         // animate={{  Opacity: 0.5, y: 0 }}
         transition={{ duration: 1}}
        >
+        
         <label>Name</label>
         <input type="text" placeholder='Enter Your Name'/> 
         <br />
